@@ -2,6 +2,7 @@
 // Dopo 30 secondi l'utente deve inserire, un prompt alla volta, i numeri che ha visto precedentemente.
 // Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
 
+var waitTime = 3000;
 
 var numeriRandom = [];
 
@@ -27,7 +28,7 @@ function getRandom (min, max) {
 var numeriTrovati = [];
 
 setTimeout(function(){
-var numeriGiusti = [];
+  
   for(var i = 0; i < 5; i++){
     numeriSceltaUtente = parseInt(prompt('scrivi il numero che ricordi!'+ (i + 1) ) );
 
